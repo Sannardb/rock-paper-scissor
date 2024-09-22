@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock, Paper, Scissors</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Rock, Paper, Scissors</h1>
+
+    <div id="scoreboard">
+      <p id="player-score">Player Wins: 0</p>
+      <p id="computer-score">Computer Wins: 0</p>
+    </div>
+
+    <button id="rock">Rock</button>
+    <button id="paper">Paper</button>
+    <button id="scissors">Scissors</button>
+
+    <div id="result">
+      <div class="result-item">
+        <p>Player</p>
+        <div id="playerChoiceImage"></div>
+      </div>
+      <div class="gap"></div>
+      <div class="result-item">
+        <div id="computerChoiceImage"></div>
+        <p>Computer</p>
+      </div>
+    </div>
+
+    <p id="game-result" class="game-result"></p>
+
+    <div id="final-scores" class="final-scores">
+      <p id="player-final-score"></p>
+      <p id="computer-final-score"></p>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

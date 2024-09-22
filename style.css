@@ -1,0 +1,90 @@
+body {
+  background: linear-gradient(90deg, #050505, #252525);
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+
+@keyframes fadeInScale {
+  0% {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+h1 {
+  animation: fadeInScale 1s ease-in;
+  color: #f0f0f0;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+  margin-bottom: 20px;
+}
+
+button {
+  background: linear-gradient(45deg, #6f8aa8, #2a5479);
+  color: white;
+  border: none;
+  border-radius: 25px;
+  padding: 12px 24px;
+  font-size: 1.1em;
+  margin: 10px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background: linear-gradient(45deg, #6f8aa8, #2a5479);
+}
+
+#result {
+  margin-top: 20px;
+  font-size: 1.2em;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.result-item {
+  display: flex;
+  align-items: center;
+}
+
+.game-result {
+  color: #eaeaea;
+  font-weight: bold;
+}
+
+.result-item p {
+  margin-right: 10px;
+}
+
+#icons {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.icon {
+  width: 100px;
+  margin: 0 10px;
+  transition: transform 0.3s; /* Smooth transition */
+}
+
+.icon:hover {
+  transform: scale(1.1);
+}
+
+#scoreboard {
+  margin-top: 20px;
+  font-size: 1.2em;
+  color: #b0b0b0;
+}
+
+.final-scores p {
+  color: #f7c81f;
+}
